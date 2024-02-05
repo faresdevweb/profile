@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;500;700");
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+    color: black;
+}
+
+.container {
+    max-width: 500px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 100%; 
+}
+
+.text-center {
+    text-align: center;
+}
+
+.profile_picture {
+    display: block; 
+    margin: 0 auto; 
+}
+
+.img-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.list-inline {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.list-inline > li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.portfolio_link, .social_link_img {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.portfolio_link:hover, .social_link_img:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.social_link_img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .profile_picture, .img-circle {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .list-inline > li {
+        padding: 0 10px;
+    }
+    
+    .portfolio_link, .social_link_img {
+        font-size: 18px; 
+        padding: 8px;
+    }
+}
